@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import Batch from './MUIStart/Emotion/Batch'
-
+import {ThemeProvider} from '@mui/material'
+import {theme} from './theme';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <ThemeProvider theme={theme}>
     <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
-
-// root.render(
-//   <React.StrictMode>
-//     <Batch />
-//   </React.StrictMode>
-// );
 
 
